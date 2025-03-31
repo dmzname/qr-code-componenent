@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Regular.woff2') format('woff2'),
+        url('../fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Bold.woff2') format('woff2'),
+        url('../fonts/Outfit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - 12px);
+}
+
+.card {
+    padding: 16px 16px 40px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card__image {
+    margin-bottom: 24px;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 0;
+}
+
+.card__image img {
+    object-fit: contain;
+    height: auto;
+    width:100%;
+}
+
+.card__title {
+    margin-bottom: 16px;
+    padding: 0 16px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: hsl(218, 44%, 22%);
+}
+
+.card__description {
+    padding: 0 16px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: hsl(216, 15%, 48%);
+}
